@@ -1,0 +1,93 @@
+.Question-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px; /* 간격 줄임 */
+  margin-bottom: 20px;
+}
+
+.compact .input-group {
+  gap: 5px; /* 라벨과 입력창 간격 줄임 */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+.input-group:last-child {
+  border-right: none;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.input-group input {
+  width: 60%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  
+}
+
+.inline-inputs {
+  display: flex; /* 가로 배치 */
+  gap: 20px; /* 입력창 간격 */
+  flex-wrap: nowrap; /* 줄 바꿈 방지 */
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 10px;
+
+}
+
+.inline-inputs input {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  height: 40px;
+}
+
+.input-group .result {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.result.O {
+  color: green;
+}
+
+.result.X {
+  color: red;
+}
+
+.next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}

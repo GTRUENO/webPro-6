@@ -1,0 +1,26 @@
+.example-container {
+  display: flex; /* 수평 배치 */
+  justify-content: flex-left; /* 오른쪽 정렬 */
+  align-items: flex-start; /* 상단 정렬 */
+  gap: 8px; /* "예시)"와 텍스트 사이 간격 */
+  font-size: 0.8504em;
+  
+}
+
+.highlight-red {
+  color: red;
+  font-weight: bold;
+  font-size: 1em;
+  display: inline; /* 텍스트처럼 동작하도록 설정 */
+}
+
+.example-text {
+  color: black; /* 기본 텍스트 색상 */
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.cartoon-grid{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
