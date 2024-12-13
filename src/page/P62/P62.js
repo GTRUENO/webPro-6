@@ -11,7 +11,7 @@ const App = () => {
           src={titleImage}
           alt="Title"
           className="title-image"
-          style={{ marginBottom: "5px" }} // 이미지와 아래 간격 조정
+          style={{ marginBottom: "5px" }} 
         />
         <p style={{ marginBottom: "15px", lineHeight: "1.6" }}>
           앞서 기억해둔 <b style={{color: "#b22222"}}>복지관의 층별 시설</b>과 시설을 대표하는 그림을 알맞게 연결해보세요.

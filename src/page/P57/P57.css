@@ -18,11 +18,35 @@
   border: 1px solid #ccc;
 }
 
-.box {
-  border: 1px solid #000;
-  text-align: center;
-  padding: 10px;
+.next-button {
+  margin-top: 1vh;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}
+
+.t {
   background-color: darkseagreen;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.z {
+  text-align: center;
 }
 
 .box-1 {

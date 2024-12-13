@@ -14,7 +14,6 @@ const DayWeather = () => {
     })
   }
 
-  const a='1'
   const getWeatherByCurrentLocation = async (lat, lon) => {
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=c80e0084d2561acf60206541abf57eb2`
     let response = await fetch(url)

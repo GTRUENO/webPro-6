@@ -4,7 +4,7 @@ import "./P63Center.css";
 const P63Center = ({ imageSrc, altText }) => {
     return (
         <>
-            {/* 첫 번째 테이블 */}
+           
             <table className="daily-table">
                 <thead>
                     <tr>

@@ -1,27 +1,26 @@
 .daily-table {
     width: 100%;
-    /* 부모 요소의 가로길이에 맞춤 */
     border-collapse: collapse;
     text-align: center;
 }
 
-/* 공통 테이블 셀 스타일 */
+
 .daily-table th,
 .daily-table td,
 .extra-table th,
 .extra-table td {
-    border: 1px solid #9AD7B2; /* 테두리 스타일 */
+    border: 1px solid #9AD7B2;
     padding: 10px;
     vertical-align: middle;
 }
 
-/* 왼쪽 테두리 제거 (첫 번째 열) */
+
 .daily-table td:first-child,
 .daily-table th:first-child {
     border-left: none;
 }
 
-/* 오른쪽 테두리 제거 (마지막 열) */
+
 .daily-table td:last-child,
 .daily-table th:last-child {
     border-right: none;
@@ -34,30 +33,30 @@
     background-color: #E6F2E8;
 }
 
-/* 입력칸 스타일링 */
+
 .input-cell {
     border: none;
-    /* 셀 테두리 제거 */
+
     padding: 0;
-    /* 셀 내부 여백 제거 */
+
 }
 
 .input-cell input {
     width: 100%;
-    /* 셀 전체 크기로 확장 */
+  
     height: 100%;
-    /* 셀 높이에 맞춤 */
+
     border: none;
-    /* 입력 필드 테두리 제거 */
+ 
     outline: none;
-    /* 포커스 시 외곽선 제거 */
+ 
     padding: 10px;
     box-sizing: border-box;
-    /* 패딩 포함 크기 계산 */
+  
     background-color: transparent;
-    /* 배경색 투명 */
+ 
     text-align: left;
-    /* 텍스트 정렬 */
+
 }
 
 
@@ -77,34 +76,34 @@
     text-align: center;
 }
 
-/* 테이블 하단의 여백 */
+
 .bottom-spacing {
-    height: 16px; /* 여백 크기 */
+    height: 16px; 
 }
 
-/* 마진이 없는 텍스트 */
+
 .text-no-margin {
     display: flex;
-    align-items: center; /* 이미지와 텍스트를 수직으로 정렬 */
+    align-items: center; 
     margin-left: 0;
     margin-bottom: 5px;
     font-size: 22px;
 }
 
-/* 왼쪽 이미지 스타일 */
+
 .left-image {
-    width: 24px; /* 이미지 크기 설정 */
+    width: 24px; 
     height: 24px;
-    margin-right: 8px; /* 이미지와 텍스트 간격 */
+    margin-right: 8px;
 }
 
-/* 텍스트 강조 스타일 */
+
 .highlighted-text {
-    color: #9AD7B2; /* 연녹색 */
-    text-decoration: underline; /* 밑줄 */
+    color: #9AD7B2; 
+    text-decoration: underline; 
 }
 
-/* 마진이 있는 텍스트 */
+
 .text-with-margin {
     text-align: left;
     margin-left: 20px;

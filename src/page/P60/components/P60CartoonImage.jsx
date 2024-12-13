@@ -1,6 +1,6 @@
 import React from "react";
 import "./asd.css"
-const P63CartoonImage = ({ imageSrc, altText }) => {
+const P60CartoonImage = ({ imageSrc, altText }) => {
   return (
     <div className="cartoon-grid">
       <div className="image-panel">
@@ -10,4 +10,4 @@ const P63CartoonImage = ({ imageSrc, altText }) => {
   );
 };
 
-export default P63CartoonImage;
+export default P60CartoonImage;

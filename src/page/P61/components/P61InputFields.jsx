@@ -4,7 +4,7 @@ import "../61P.css";
 
 const P61InputFields = () => {
   const [answers, setAnswers] = useState({ 성주: "", 상구: "", 양심: "", 정선: "", friend1: "", friend2: "" });
-  const [results, setResults] = useState({}); // 채점 결과 저장
+  const [results, setResults] = useState({}); 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const navigate = useNavigate();
 
@@ -17,13 +17,13 @@ const P61InputFields = () => {
   };
 
   const handleSubmit = () => {
-    // 1번 문제 채점
+    
     const results1 = Object.keys(correctAnswers1).reduce((acc, key) => {
       acc[key] = correctAnswers1[key] === answers[key] ? "O" : "X";
       return acc;
     }, {});
 
-    // 2번 문제 채점
+    
     const userAnswers2 = [answers.friend1.trim(), answers.friend2.trim()];
     const isCorrect2 =
       userAnswers2.length === correctAnswers2.length &&
@@ -51,7 +51,7 @@ const P61InputFields = () => {
               name={name}
               value={answers[name]}
               onChange={handleChange}
-              disabled={isSubmitted} // 제출 후 비활성화
+              disabled={isSubmitted}
             />
             {isSubmitted && <span className={`result ${results[name]}`}>{results[name]}</span>}
           </div>
@@ -67,7 +67,7 @@ const P61InputFields = () => {
           name="friend1"
           value={answers.friend1}
           onChange={handleChange}
-          disabled={isSubmitted} // 제출 후 비활성화
+          disabled={isSubmitted} 
         />
         {isSubmitted && <span className={`result ${results.question2 === "O" ? "O" : "X"}`}></span>}
         <b>친구2</b>
@@ -77,7 +77,7 @@ const P61InputFields = () => {
           name="friend2"
           value={answers.friend2}
           onChange={handleChange}
-          disabled={isSubmitted} // 제출 후 비활성화
+          disabled={isSubmitted}
         />
       </div>
       {isSubmitted && (

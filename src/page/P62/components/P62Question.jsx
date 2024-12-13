@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // React Router 가져오기
+import { useNavigate } from "react-router-dom"; 
 import "../62P.css";
 
 import Question1 from "../img/Question1.jpg";
@@ -8,7 +8,7 @@ import Question3 from "../img/Question3.jpg";
 import Question4 from "../img/Question4.jpg";
 import Question5 from "../img/Question5.jpg";
 
-// 이미지 배열 구성
+
 const questions = [
   { id: 1, image: Question1, style: { maxWidth: "300px", maxHeight: "200px" } },
   { id: 2, image: Question2, style: { maxWidth: "300px", maxHeight: "200px" } },
@@ -17,15 +17,15 @@ const questions = [
   { id: 5, image: Question5, style: { maxWidth: "300px", maxHeight: "200px" } },
 ];
 
-const answers = [5, 4, 2, 1, 3]; // 정답 배열
+const answers = [5, 4, 2, 1, 3]; 
 
 const Question = () => {
-  const [connections, setConnections] = useState([]); // 연결 상태
-  const [selectedLeft, setSelectedLeft] = useState(null); // 왼쪽에서 선택된 항목
-  const [selectedRight, setSelectedRight] = useState(null); // 오른쪽에서 선택된 항목
+  const [connections, setConnections] = useState([]); 
+  const [selectedLeft, setSelectedLeft] = useState(null); 
+  const [selectedRight, setSelectedRight] = useState(null); 
   const [submitted, setSubmitted] = useState(false);
   const svgRef = useRef(null);
-  const navigate = useNavigate(); // navigate 함수 선언
+  const navigate = useNavigate(); 
 
   const handleLeftSelect = (id) => {
     if (selectedRight !== null) {
@@ -61,7 +61,7 @@ const Question = () => {
   };
 
   const handleNext = () => {
-    navigate("/63"); // 다음 페이지로 이동
+    navigate("/63"); 
   };
 
   const calculateScore = () => {

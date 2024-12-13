@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class P63InstructionImage extends Component {
+class P60InstructionImage extends Component {
   render() {
     const { imageSrc, altText } = this.props; 
     return (
@@ -11,4 +11,4 @@ class P63InstructionImage extends Component {
   }
 }
 
-export default P63InstructionImage;
+export default P60InstructionImage;

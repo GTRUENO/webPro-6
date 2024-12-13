@@ -10,7 +10,7 @@ const P61 = () => {
         src={titleImage}
         alt="Title"
         className="title-image"
-        style={{ marginBottom: "5px" }} // 이미지와 아래 간격 조정
+        style={{ marginBottom: "5px" }}
       />
       <p style={{ marginBottom: "15px", lineHeight: "1.6" }}>
         네 친구들이 복지관 앞 정자에서 대화를 나누고 있습니다.

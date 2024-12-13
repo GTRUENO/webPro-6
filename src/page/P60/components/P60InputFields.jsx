@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import axios from "axios"; // OpenAI API 호출을 위한 라이브러리
+import axios from "axios"; 
 import "./asd.css";
 
-const P63InputFields = ({ inputs, handleInputChange }) => {
+const P60InputFields = ({ inputs, handleInputChange }) => {
   const [results, setResults] = useState(Array(inputs.length).fill(null));
   const [disabledButtons, setDisabledButtons] = useState(
     Array(inputs.length).fill(false)
@@ -11,7 +11,7 @@ const P63InputFields = ({ inputs, handleInputChange }) => {
   const xSound = new Audio("/sounds/x-sound.mp3");
   const handleSubmit = async (index) => {
     const userInput = inputs[index];
-    await new Promise((resolve) => setTimeout(resolve, 1000)); // 1초 대기
+    await new Promise((resolve) => setTimeout(resolve, 1000)); 
     try {
       const response = await axios.post(
         "https://api.openai.com/v1/chat/completions",
@@ -88,7 +88,7 @@ const P63InputFields = ({ inputs, handleInputChange }) => {
             제출
           </button>
           {results[index] && (
-            <span className={`result ${results[index] === "O" ? "valid" : "invalid"}`}>
+            <span className={`result ${results[index] === "O" ? "O" : "X"}`}>
               {results[index]}
             </span>
           )}
@@ -98,4 +98,4 @@ const P63InputFields = ({ inputs, handleInputChange }) => {
   );
 };
 
-export default P63InputFields;
+export default P60InputFields;

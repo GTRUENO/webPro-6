@@ -1,8 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
 .example-container {
-  display: flex; /* 수평 배치 */
-  justify-content: flex-left; /* 오른쪽 정렬 */
-  align-items: flex-start; /* 상단 정렬 */
-  gap: 8px; /* "예시)"와 텍스트 사이 간격 */
+  display: flex; 
+  justify-content: flex-left; 
+  align-items: flex-start; 
+  gap: 8px; 
   font-size: 0.8504em;
   
 }
@@ -11,11 +21,11 @@
   color: red;
   font-weight: bold;
   font-size: 1em;
-  display: inline; /* 텍스트처럼 동작하도록 설정 */
+  display: inline; 
 }
 
 .example-text {
-  color: black; /* 기본 텍스트 색상 */
+  color: black; 
   font-size: 1.1em;
   line-height: 1.6;
 }
@@ -23,4 +33,173 @@
 .cartoon-grid{
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.input-group {
+  margin: 10px 0;
+  display: flex;
+  align-items: center; 
+  padding-bottom: 10px;
+  gap: 10px;
+}
+
+.input-group input,
+.submit-button {
+  height: 40px; 
+  min-height: 40px; 
+  max-height: 40px;
+  padding: 0 10px; 
+  font-size: 14px; 
+  line-height: 1.5;
+}
+
+.input-group input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  width: 80%; 
+  transition: border-bottom-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-bottom-color: #007bff;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+
+  line-height: 1; 
+  white-space: nowrap; 
+  writing-mode: horizontal-tb; 
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.cartoon-container{
+  margin-bottom: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  font-weight: bold;
+
+  min-width: 10px; 
+  text-align: center;
+}
+.result.O {
+  color: green;
+}
+
+.result.X {
+  color: red;
+}
+
+.example-text {
+  color: red; 
+  font-size: 1.1em; 
+  line-height: 1.6; 
+}
+
+.highlight-red {
+  color: red; 
+  font-weight: bold;
+}
+
+.input-label {
+  margin-right: 10px;
+}
+.input-group {
+  margin: 10px 0;
+  display: flex;
+  align-items: center; 
+  padding-bottom: 10px;
+  gap: 10px; 
+}
+
+.input-group input,
+.submit-button {
+  height: 40px; 
+  min-height: 40px; 
+  max-height: 40px;
+  padding: 0 10px; 
+  font-size: 14px;
+  line-height: 1.5; 
+}
+
+.input-group input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  width: 80%; 
+  transition: border-bottom-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-bottom-color: #007bff;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+
+  line-height: 1; 
+  white-space: nowrap; 
+  writing-mode: horizontal-tb; 
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.cartoon-container{
+  margin-bottom: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  font-weight: bold;
+
+  min-width: 10px; 
+  text-align: center;
+}
+.result.O {
+  color: green;
+}
+
+.result.X {
+  color: red;
+}
+
+.example-text {
+  color: red; 
+  font-size: 1.1em; 
+  line-height: 1.6; 
+}
+
+.highlight-red {
+  color: red; 
+  font-weight: bold;
+}
+
+.input-label {
+  margin-right: 10px;
 }

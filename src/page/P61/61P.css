@@ -1,11 +1,9 @@
-/* Reset 기본 스타일 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 컨테이너 스타일 */
 .p61-container {
   margin: auto;
   position: absolute;
@@ -20,8 +18,6 @@
   background-color: white;
 }
 
-
-/* 타이틀 이미지 스타일 */
 .image-container {
   text-align: left;
   margin-bottom: 20px;
@@ -30,17 +26,17 @@
 .title-image {
   max-width: 100%;
   width: 150px;
-  height: auto; /* 비율 유지 */
+  height: auto; 
 }
 
-/* 질문 텍스트 스타일 */
+
 .Question-text {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* 그리드 컨테이너 스타일 */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -49,10 +45,10 @@
 }
 
 .compact .input-group {
-  gap: 5px; /* 라벨과 입력창 간격 */
+  gap: 5px; 
 }
 
-/* 입력 그룹 스타일 */
+
 .input-group {
   display: flex;
   flex-direction: column;
@@ -83,11 +79,11 @@
   text-align: center;
 }
 
-/* 인라인 입력 스타일 */
+
 .inline-inputs {
   display: flex;
-  gap: 20px; /* 입력창 간격 */
-  flex-wrap: nowrap; /* 줄 바꿈 방지 */
+  gap: 20px; 
+  flex-wrap: nowrap; 
   margin-bottom: 20px;
   margin-top: 15px;
   margin-left: 10px;
@@ -103,7 +99,7 @@
   height: 40px;
 }
 
-/* 결과 스타일 */
+
 .result {
   margin-top: 20px;
   font-weight: bold;
@@ -119,7 +115,7 @@
   color: red;
 }
 
-/* 버튼 스타일 */
+
 .next-button {
   margin-top: 20px;
   padding: 10px 20px;
