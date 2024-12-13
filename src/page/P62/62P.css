@@ -1,0 +1,187 @@
+
+.p62-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.question-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.question-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+}
+
+.question-item img {
+  max-width: 80px;
+  max-height: 80px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.svg-connector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.score {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.question-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+}
+
+.question-grid {
+  display: flex;
+  justify-content: space-between; /* 좌우 문항 간격 조정 */
+  align-items: flex-start; /* 문항을 상단 정렬 */
+  gap: 40px; /* 좌우 문항 간격 */
+  position: relative;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 문항 간 간격 */
+}
+
+.question-item {
+  display: flex;
+  align-items: center; /* 라디오 버튼과 이미지 수평 정렬 */
+  gap: 10px; /* 라디오 버튼과 이미지 간격 */
+}
+
+.question-item img {
+  max-width: 100px; /* 이미지 크기 */
+  max-height: 100px; /* 이미지 크기 */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.right-column .question-item {
+  justify-content: flex-start; /* 라디오 버튼과 텍스트 정렬 */
+}
+
+.right-column .question-item input[type="radio"] {
+  margin-right: 10px; /* 라디오 버튼과 텍스트 간격 */
+}
+
+.right-column .question-item span {
+  font-size: 16px; /* 텍스트 크기 */
+}
+
+.svg-connector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* SVG가 클릭 이벤트를 방해하지 않도록 설정 */
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.score {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.dot-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dot-checkbox:checked {
+  background-color: #007bff;
+  border-color: #0056b3;
+}
+
+.dot-right-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 63px;
+  margin-bottom: 63px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}

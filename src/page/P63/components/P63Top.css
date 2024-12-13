@@ -1,0 +1,41 @@
+.p63-top-container {
+    display: flex; /* 가로 정렬 */
+    justify-content: space-between; /* 양쪽 끝 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    width: 100%; /* 전체 가로폭 차지 */
+    padding-left: 50px;
+    box-sizing: border-box; /* 패딩 포함 폭 계산 */
+    font-size: 20px; /* 기본 텍스트 크기 */
+}
+.cartoon-image {
+    width: 120px; /* 이미지 너비 키우기 */
+    height: auto; /* 비율 유지 */
+    flex-shrink: 0; /* 이미지 크기 고정 */
+}
+
+.date-section {
+    display: flex; /* 각 텍스트 요소를 가로로 배치 */
+    gap: 30px; /* 각 항목 간의 간격 */
+}
+
+.date-section span {
+    white-space: nowrap; /* 줄바꿈 방지 */
+    margin: 0;
+}
+.weather-container {
+    display: flex;
+    font-size: 20px;
+    align-items: center; /* 텍스트와 이미지 수직 중앙 정렬 */
+    gap: 8px; /* 텍스트와 이미지 사이 간격 */
+}
+
+.weather-section {
+    display: flex;
+    align-items: center; /* 이미지 수직 중앙 정렬 */
+}
+
+.weather-icon {
+    width: 30px; /* 이미지 크기 설정 */
+    height: 30px; /* 이미지 크기 설정 */
+    vertical-align: middle; /* 텍스트와 이미지 높이 맞춤 */
+}

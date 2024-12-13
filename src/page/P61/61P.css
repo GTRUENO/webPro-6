@@ -1,0 +1,137 @@
+/* Reset 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 컨테이너 스타일 */
+.p61-container {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+
+/* 타이틀 이미지 스타일 */
+.image-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.title-image {
+  max-width: 100%;
+  width: 150px;
+  height: auto; /* 비율 유지 */
+}
+
+/* 질문 텍스트 스타일 */
+.Question-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 그리드 컨테이너 스타일 */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.compact .input-group {
+  gap: 5px; /* 라벨과 입력창 간격 */
+}
+
+/* 입력 그룹 스타일 */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+.input-group:last-child {
+  border-right: none;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 50%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* 인라인 입력 스타일 */
+.inline-inputs {
+  display: flex;
+  gap: 20px; /* 입력창 간격 */
+  flex-wrap: nowrap; /* 줄 바꿈 방지 */
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.inline-inputs input {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  height: 40px;
+}
+
+/* 결과 스타일 */
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.result.O {
+  color: green;
+}
+
+.result.X {
+  color: red;
+}
+
+/* 버튼 스타일 */
+.next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}
