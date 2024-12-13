@@ -15,9 +15,9 @@ const P58Stair = (props) => {
     };
 
     if (userInput === correctAnswers[props.a]) {
-      setFeedback("O");
+      setFeedback('O');
     } else {
-      setFeedback("X");
+      setFeedback('X');
     }
   };
 
@@ -30,7 +30,6 @@ const P58Stair = (props) => {
           value={userInput}
           onChange={(e) => setUserInput(e.target.value)}
           style={{
-            // width: '100px',
             textAlign: 'center',
             margin: '0 5px',
           }}
@@ -38,8 +37,8 @@ const P58Stair = (props) => {
       </div>
       <div className="box-3 box">
         {props.c}
-        {/* <button onClick={checkAnswer} style={{ marginLeft: '10px' }}>확인</button>
-        {feedback && <span>{feedback}</span>} */}
+        <button onClick={checkAnswer} style={{ marginLeft: '10px' }}>확인</button>
+        {feedback && <span>{feedback}</span>}
       </div>
     </div>
   );

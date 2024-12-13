@@ -62,8 +62,8 @@ const P58AllStair = () => {
                 }}
               />
               프로그램이 진행됩니다.
-              {/* <button onClick={() => checkAnswer("5층")}>확인</button>
-              {feedback["5층"] && <span>{feedback["5층"]}</span>} */}
+              <button onClick={() => checkAnswer("5층")}>확인</button>
+              {feedback["5층"] && <span>{feedback["5층"]}</span>}
             </div>
           </>
         }
@@ -85,8 +85,8 @@ const P58AllStair = () => {
                 }}
               />
               프로그램이 진행됩니다.
-              {/* <button onClick={() => checkAnswer("4층")}>확인</button>
-              {feedback["4층"] && <span>{feedback["4층"]}</span>} */}
+              <button onClick={() => checkAnswer("4층")}>확인</button>
+              {feedback["4층"] && <span>{feedback["4층"]}</span>}
             </div>
           </>
         }
@@ -108,8 +108,8 @@ const P58AllStair = () => {
                 }}
               />
               프로그램이 진행됩니다.
-              {/* <button onClick={() => checkAnswer("3층")}>확인</button>
-              {feedback["3층"] && <span>{feedback["3층"]}</span>} */}
+              <button onClick={() => checkAnswer("3층")}>확인</button>
+              {feedback["3층"] && <span>{feedback["3층"]}</span>}
             </div>
           </>
         }
@@ -131,8 +131,8 @@ const P58AllStair = () => {
                 }}
               />
               프로그램이 진행됩니다.
-              {/* <button onClick={() => checkAnswer("2층")}>확인</button>
-              {feedback["2층"] && <span>{feedback["2층"]}</span>} */}
+              <button onClick={() => checkAnswer("2층")}>확인</button>
+              {feedback["2층"] && <span>{feedback["2층"]}</span>}
             </div>
           </>
         }
@@ -154,8 +154,8 @@ const P58AllStair = () => {
                 }}
               />
               를 받을 수 있습니다. 
-              {/* <button onClick={() => checkAnswer("1층 진료")}>확인</button>
-              {feedback["1층 진료"] && <span>{feedback["1층 진료"]}</span>} */}
+              <button onClick={() => checkAnswer("1층 진료")}>확인</button>
+              {feedback["1층 진료"] && <span>{feedback["1층 진료"]}</span>}
               <br />
               또한 운동치료, 전기자극치료 등
               <input
@@ -169,8 +169,8 @@ const P58AllStair = () => {
                 }}
               />
               서비스를 이용할 수 있습니다.
-              {/* <button onClick={() => checkAnswer("1층 물리치료")}>확인</button>
-              {feedback["1층 물리치료"] && <span>{feedback["1층 물리치료"]}</span>} */}
+              <button onClick={() => checkAnswer("1층 물리치료")}>확인</button>
+              {feedback["1층 물리치료"] && <span>{feedback["1층 물리치료"]}</span>}
             </div>
           </>
         }
